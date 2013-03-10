@@ -118,7 +118,7 @@ Handle<Value> Method(const Arguments& args) {
 	uv_work_t *req = new uv_work_t;
 	req->data = authStruct;
 	
-	uv_queue_work(uv_default_loop(), req, doing_work, after_doing_work);
+	uv_queue_work(uv_default_loop(), req, doing_work, (uv_after_work_cb)after_doing_work);
 
 	return scope.Close(Undefined());
 }
