@@ -54,13 +54,14 @@ void doing_work (uv_work_t *req) {
 			krb5_free_error_message(context, msg);
 		}
 
-		krb5_free_context(context);
 	}
 	else {
 		const char* msg = krb5_get_error_message(context, err ); // ha bisogno di un context
 		authStruct->error_message = new std::string(msg);
 		krb5_free_error_message(context, msg);
 	}
+	
+	krb5_free_context(context);
 }
 
 void after_doing_work (uv_work_t *req) {
