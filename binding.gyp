@@ -4,7 +4,8 @@
       "target_name": "krb5",
       "include_dirs": [
         "$(MITKRB5)/include",
-        "$(MITKRB5)/include/krb5"
+        "$(MITKRB5)/include/krb5",
+        "<!(node -e \"require('nan')\")"
       ],
       "sources": [
         "src/krb5.cc"
