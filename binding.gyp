@@ -30,7 +30,7 @@
                 {
                   "link_settings": {
                     "libraries": [
-                      "$(MITKRB5)/lib/amd64/krb5_32.lib"
+                      "$(MITKRB5)/lib/i386/krb5_32.lib"
                     ]
                   }
                 }
