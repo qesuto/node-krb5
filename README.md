@@ -2,6 +2,13 @@ node-krb5
 =========
 ### Node.js native addon for simple krb5 user authentication
 
+### !!! WARNING !!!
+
+### The module currently DOES NOT VERIFY THE KDC and is susceptible to spoofing. You can find more details in issue #13 (thanks, Richard :)). 
+
+### !!! WARNING !!!
+
+
 The module currently builds on linux with krb5 headers and libs (tested on centos), osx (tested on lion and mountain lion) and windows (tested on windows 8.1 with MIT Kerberos)
 
 Installation
