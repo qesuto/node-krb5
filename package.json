@@ -1,6 +1,6 @@
 {
   "name": "node-krb5",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "qesuto <qesuto@gmail.com>",
   "description": "Node.js native addon for simple krb5 user authentication",
   "repository": {
