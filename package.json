@@ -1,6 +1,6 @@
 {
   "name": "node-krb5",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "qesuto <qesuto@gmail.com>",
   "description": "Node.js native addon for simple krb5 user authentication",
   "repository": {
@@ -22,8 +22,8 @@
     "node": ">=0.5.6"
   },
   "dependencies": {
-    "nan": "^1.8.4",
-    "node-gyp": "0.13.1"
+    "nan": "^2.7.0",
+    "node-gyp": "^3.6.2"
   },
   "scripts": {
     "install": "node-gyp rebuild"
